@@ -6,7 +6,7 @@ const Axiosfun = async (url) => {
     const response = await axios.get(url);
     return response.data;
   } catch (error) {
-    alert("Data not loaded");
+    alert("Server Down 👁️");
     throw error;
   }
 };

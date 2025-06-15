@@ -2,6 +2,10 @@ import React from 'react';
 import './Loading.css';
 
 function LoadingScreen() {
+
+console.log('load')
+
+  
   const text = "Loading your gaming experience...";
   
   return (

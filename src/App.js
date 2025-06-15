@@ -16,7 +16,16 @@ function App() {
     Ubisofttopdeals
   } = useContext(GameDealsContext);
 
-  const allDataLoaded = Steamtopdeals && Epictopdeals && gogtopdeals && Ubisofttopdeals;
+
+
+
+
+  const allDataLoaded =
+    Steamtopdeals.length > 0 &&
+    Epictopdeals.length > 0 &&
+    gogtopdeals.length > 0 &&
+    Ubisofttopdeals.length > 0;
+
 
   return (
     <Router>
