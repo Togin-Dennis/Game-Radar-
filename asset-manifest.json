@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Game-Radar-/static/css/main.19117972.css",
+    "main.js": "/Game-Radar-/static/js/main.cef5a4a3.js",
+    "static/js/453.54bf1541.chunk.js": "/Game-Radar-/static/js/453.54bf1541.chunk.js",
+    "static/media/GameRadarLogo.png": "/Game-Radar-/static/media/GameRadarLogo.90440f7f5a7acb26ac81.png",
+    "index.html": "/Game-Radar-/index.html",
+    "main.19117972.css.map": "/Game-Radar-/static/css/main.19117972.css.map",
+    "main.cef5a4a3.js.map": "/Game-Radar-/static/js/main.cef5a4a3.js.map",
+    "453.54bf1541.chunk.js.map": "/Game-Radar-/static/js/453.54bf1541.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19117972.css",
+    "static/js/main.cef5a4a3.js"
+  ]
+}
