@@ -1,0 +1,138 @@
+.game-search-wrapper {
+  width: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #1b1f3b, #2b2e4a);
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.game-search-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-search-header h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.game-search-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.game-search-grid > .heading,
+.game-search-card {
+  display: contents;
+}
+
+.heading span,
+.price-cell {
+  padding: 12px 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.heading span:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  padding-left: 20px;
+  background: #292c49;
+  border-radius: 14px 0 0 14px;
+  overflow: hidden;
+}
+
+.game-thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.game-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #f1f1f1;
+}
+
+.price-cell {
+  background: #292c49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-search-card:hover .price-cell,
+.game-search-card:hover .game-info {
+  background: #353964;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top: 6px solid #b726a1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* ✅ Optional: Responsive tweaks for small screens */
+@media (max-width: 768px) {
+  .game-search-grid {
+    grid-template-columns: 2fr 1.2fr 1.2fr 1.2fr;
+    font-size: 0.9rem;
+  }
+
+  .game-thumb {
+    width: 40px;
+    height: 40px;
+  }
+
+  .game-title {
+    font-size: 0.95rem;
+  }
+
+  .heading span,
+  .price-cell {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+  }
+
+  .game-info {
+    gap: 10px;
+    padding-left: 10px;
+  }
+}

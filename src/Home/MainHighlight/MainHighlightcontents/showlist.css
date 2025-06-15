@@ -1,0 +1,121 @@
+.showlistmaindiv {
+  width: 100%;
+  background: linear-gradient(to bottom right, #1b1f3b, #2b2e4a);
+  padding: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.Showlistheader {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout for header and data rows */
+.listrow {
+  display: grid;
+  grid-template-columns: 130px 1fr 120px 120px 120px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.listrow:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.headerrow {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffffc0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: default;
+}
+
+/* Title/Image Columns */
+.titlecol {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  text-align: left;
+  grid-column: 1 / span 2;
+}
+
+/* Header layout override to match data layout */
+.headerrow .titlecol {
+  grid-column: 1 / span 2;
+}
+
+/* Prices */
+.pricecol {
+  text-align: right;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.listimg {
+  width: 100px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.listtitle {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Price Colors */
+.saleprice {
+  color: rgb(150, 210, 38);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .listrow {
+    grid-template-columns: 100px 1fr 100px 100px 100px;
+  }
+
+  .listimg {
+    width: 80px;
+  }
+
+  .listtitle {
+    font-size: 13px;
+  }
+
+  .pricecol {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .listrow {
+    grid-template-columns: 90px 1fr 90px 90px 90px;
+  }
+
+  .listimg {
+    width: 60px;
+  }
+
+  .listtitle {
+  display: none;
+  }
+
+  .pricecol {
+    font-size: 12px;
+    padding: 0 4px;
+  }
+}

@@ -1,0 +1,321 @@
+.HeaderMainDiv {
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Small Top Header */
+.smallheader {
+  background-color: #12183a;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.Socialiconbutton {
+  color: rgb(127, 176, 211);
+  padding-right: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.Socialiconbutton:hover
+{
+cursor: pointer;
+color: #b726a1;
+transform: scale(1.1);
+}
+.SmallheaderText {
+  color: rgb(127, 176, 211);
+  font-weight: 500;
+}
+
+/* Main Header */
+.bigheader {
+  background-color: #1e254f;
+  padding: 0 15px;
+}
+
+.bigheaderfirstbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.headerlogo {
+  height: 70px;
+
+  cursor: pointer;
+}
+
+.Searchbox {
+  display: flex;
+  background-color: #b726a1;
+  border-radius: 10px;
+  padding-right: 15px;
+  align-items: center;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 700px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.searchinputbox {
+  background-color: #060b2b;
+  border: 2px solid #b726a1;
+  height: 45px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.searchinputbox:focus {
+  outline: none;
+  border: 2px solid #b726a1;
+}
+
+.Searchicon {
+  padding-left: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.Searchiconbox:hover
+{
+  cursor: pointer;
+.Searchicon
+{
+  transform:scale(1.1)
+  
+}
+}
+.searchinputbox::placeholder {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.RightWrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Login & Wishlist */
+.LoginBox {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  transition: all 0.3s ease-in;
+}
+
+.LoginBox:hover .icons {
+  color: rgb(127, 176, 211);
+  transform: scale(1.1);
+}
+
+.LoginTextBox {
+  padding-left: 10px;
+}
+
+.LoginText {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.WhishlistBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Bottom Header */
+.Endheader {
+  background-color: #1e254f;
+  height: 50px;
+  border-top: 1px solid rgba(128, 128, 128, 0.295);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.Dowmloadappbox {
+  background-color: #b726a1;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 0 15px;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dowmloadappbox:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.DownloadappText {
+  font-family: 'Saira', sans-serif;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.Sections {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+
+.sectionname {
+  font-family: 'Saira', sans-serif;
+  font-size: 13px;
+  transition: all 0.3s ease-out;
+}
+
+.sectionname:hover {
+  color: rgb(127, 176, 211);
+  cursor: pointer;
+}
+
+.Endheaderwrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.HelpTextHEading,
+.HelpvalueText {
+  font-family: 'Saira', sans-serif;
+  margin: 0;
+}
+
+.HelpvalueText {
+  font-size: 13px;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+/* ✅ Responsive Fixes */
+@media screen and (max-width: 1080px) {
+  .searchinputbox {
+    font-size: 16px;
+  }
+
+  .RightWrapper {
+    gap: 20px;
+  }
+
+  .bigheaderfirstbox {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bigheaderfirstbox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 15px 0;
+  }
+
+  .Searchbox {
+    width: 100%;
+    margin: 10px 0;
+    max-width: 100%;
+  }
+
+  .searchinputbox {
+    font-size: 16px;
+  }
+
+  .RightWrapper {
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .LoginBox {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .WhishlistBox {
+    gap: 8px;
+  }
+
+  .headerlogo {
+    height: 40px;
+  }
+
+  .Endheader {
+    flex-direction: column;
+    padding: 10px 15px;
+    height: auto;
+    gap: 10px;
+  }
+
+  .Endheaderwrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .Dowmloadappbox {
+    display: none;
+  }
+
+  .Sections {
+    gap: 15px;
+  }
+
+  .HelpvalueText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .smallheader {
+    display: none;
+  }
+
+  .SmallheaderText {
+    font-size: 14px;
+  }
+
+  .Socialiconbutton {
+    margin: 0;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .searchinputbox {
+    font-size: 16px;
+    height: 40px;
+  }
+
+  .Searchiconbox {
+    padding: 8px;
+  }
+}

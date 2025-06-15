@@ -1,0 +1,198 @@
+.FreeGameMainDiv {
+  user-select: none;
+  background: linear-gradient(to bottom right, #1b1f3b, #2b2e4a);
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin: 20px 20px 30px;
+}
+
+.freegameheadingwrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.freegamesidescrollbuttons {
+  display: flex;
+  gap: 20px;
+}
+
+.Sidescrollbutton {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 16px;
+}
+
+.Sidescrollbutton:hover {
+  background-color: #ad0691;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #ad0691aa;
+}
+
+.freegameboxmain {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.freegameboxmain::-webkit-scrollbar {
+  display: none;
+}
+
+.freegameboxwrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.freegamebox {
+  flex-shrink: 0;
+  width: 260px;
+  background: #2c2f4a;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.freegamebox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 16px rgba(173, 6, 145, 0.6);
+}
+
+.Stack {
+  position: relative;
+}
+
+.FreeGameImg {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+  transition: filter 0.3s ease;
+}
+
+.FreeGameImg:hover {
+  filter: brightness(0.8);
+}
+
+.freegameprice {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  background-color: rgba(173, 6, 145, 0.7);
+  padding: 6px 14px;
+  font-size: 13px;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.freegametext {
+  background-color: rgba(173, 6, 145, 0.7);
+  padding: 6px 14px;
+  color: white;
+  font-size: 13px;
+  border-radius: 0 0 14px 14px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.freegamename {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 12px 12px 4px;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.freegameDescription {
+  font-size: 14px;
+  color: #ccc;
+  margin: 0 12px 12px;
+  line-height: 1.4;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.freegameClaimButton {
+  margin: 16px auto 20px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  text-align: center;
+  max-width: 80%;
+}
+
+.freegameClaimButton:hover {
+  background-color: #ad0691;
+  color: black;
+  box-shadow: 0 4px 12px #ad0691aa;
+}
+
+.FreeHeading {
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .freegamebox {
+    width: 220px;
+  }
+
+  .freegamename {
+    font-size: 16px;
+  }
+
+  .freegameDescription {
+    font-size: 13px;
+  }
+
+  .freegameClaimButton {
+    font-size: 13px;
+    padding: 10px 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .freegamebox {
+    width: 180px;
+  }
+
+  .freegamename {
+    font-size: 15px;
+  }
+
+  .freegameDescription {
+    font-size: 12px;
+  }
+
+  .freegameClaimButton {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+}

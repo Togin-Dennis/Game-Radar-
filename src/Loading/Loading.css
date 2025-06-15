@@ -1,0 +1,29 @@
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 2px;
+  overflow: hidden;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.loading-letter {
+  display: inline-block;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}

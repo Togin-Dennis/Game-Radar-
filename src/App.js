@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+// App.js
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home/Home';
+import Header from './Home/Header/Header';
+import Search from './Search/Search';
+import LoadingScreen from './Loading/Loading';
 import './App.css';
+import { GameDealsContext } from './GlobelFunc/Globeldatastore';
 
 function App() {
+  const {
+    Steamtopdeals,
+    Epictopdeals,
+    gogtopdeals,
+    Ubisofttopdeals
+  } = useContext(GameDealsContext);
+
+  const allDataLoaded = Steamtopdeals && Epictopdeals && gogtopdeals && Ubisofttopdeals;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {!allDataLoaded ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <div className='HeaderFixed'>
+            <Header />
+          </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/loading" element={<LoadingScreen />} />
+          </Routes>
+        </>
+      )}
+    </Router>
   );
 }
 

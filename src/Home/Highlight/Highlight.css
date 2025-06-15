@@ -1,0 +1,65 @@
+.HighlightMainDiv
+{
+    background-color:  #060b2b;
+    height:200px;
+ 
+    display: flex;
+    flex-direction: row;
+   margin: 15px;
+     overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  gap: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+    
+}
+
+.HighlightMainDiv::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+.Highlightimagesection {
+
+  flex: 1;
+  height: 100%; 
+  width: auto;
+  aspect-ratio: 9/16;
+  background-color: #040404;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: end;
+  
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: all 0.5s ease-in;
+}
+
+.Highlightimagesection:hover
+{
+filter: grayscale(10);
+cursor: pointer;
+}
+
+.Textbox
+{
+padding: 5px;
+width: 100%;
+background-color: #b726a15b;
+color: white;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+
+}
+.Currentprice
+{
+padding: 0;
+margin: 0;
+margin-left: 10px;
+padding-bottom: 0px;
+font-weight: 400;
+}

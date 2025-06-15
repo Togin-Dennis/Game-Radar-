@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { GameDealsProvider } from './GlobelFunc/Globeldatastore';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+        <GameDealsProvider>
     <App />
+    </GameDealsProvider>
   </React.StrictMode>
 );
 
