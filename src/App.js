@@ -1,6 +1,6 @@
 // App.js
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home/Home';
 import Header from './Home/Header/Header';
 import Search from './Search/Search';
