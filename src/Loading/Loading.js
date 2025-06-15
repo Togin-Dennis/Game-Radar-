@@ -2,23 +2,30 @@ import React from 'react';
 import './Loading.css';
 
 function LoadingScreen() {
-
-console.log('load')
-
-  
   const text = "Loading your gaming experience...";
-  
+
+  // Split into words including spaces
+  const words = text.split(' ');
+
   return (
     <div className="loading-screen">
-      {text.split('').map((char, index) => (
-        <span
-          key={index}
-          className="loading-letter"
-          style={{ animationDelay: `${index * 0.05}s` }}
-        >
-          {char === ' ' ? '\u00A0' : char}
-        </span>
-      ))}
+      <div className="loading-text-container">
+        {words.map((word, wordIndex) => (
+          <span key={wordIndex} className="word-span">
+            {word.split('').map((char, charIndex) => (
+              <span
+                key={charIndex}
+                className="loading-letter"
+                style={{ animationDelay: `${(wordIndex * 6 + charIndex) * 0.05}s` }}
+              >
+                {char}
+              </span>
+            ))}
+            {/* Add space between words */}
+            <span className="loading-letter">&nbsp;</span>
+          </span>
+        ))}
+      </div>
     </div>
   );
 }

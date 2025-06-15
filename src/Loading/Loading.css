@@ -8,9 +8,22 @@
   font-size: 2rem;
   font-family: 'Segoe UI', sans-serif;
   letter-spacing: 2px;
-  overflow: hidden;
+  padding: 0 20px;
   text-align: center;
+}
+
+.loading-text-container {
+  max-width: 90%;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.word-span {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .loading-letter {
@@ -25,5 +38,11 @@
 
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 500px) {
+  .loading-screen {
+    font-size: 1.4rem;
   }
 }

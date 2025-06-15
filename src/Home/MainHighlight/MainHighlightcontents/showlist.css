@@ -83,13 +83,14 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1168px) {
   .listrow {
-    grid-template-columns: 100px 1fr 100px 100px 100px;
+    grid-template-columns: 80px 1fr 70px 70px 70px;
+    padding: 10px 0;
   }
 
   .listimg {
-    width: 80px;
+    width: 60px;
   }
 
   .listtitle {
@@ -103,19 +104,25 @@
 
 @media screen and (max-width: 500px) {
   .listrow {
-    grid-template-columns: 90px 1fr 90px 90px 90px;
+    grid-template-columns: 60px 1fr 60px 60px 60px;
+    padding: 8px 0;
   }
 
   .listimg {
-    width: 60px;
+    width: 50px;
   }
 
   .listtitle {
-  display: none;
+    display: block;
+    font-size: 12px;
   }
 
   .pricecol {
     font-size: 12px;
-    padding: 0 4px;
+    padding: 0 2px;
+  }
+
+  .titlecol {
+    gap: 6px;
   }
 }
