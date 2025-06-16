@@ -7,6 +7,7 @@ import Search from './Search/Search';
 import LoadingScreen from './Loading/Loading';
 import './App.css';
 import { GameDealsContext } from './GlobelFunc/Globeldatastore';
+import NotFound from './404/404';
 
 function App() {
   const {
@@ -40,6 +41,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/search" element={<Search />} />
             <Route path="/loading" element={<LoadingScreen />} />
+             <Route path="/404" element={<NotFound/>} />
           </Routes>
         </>
       )}
