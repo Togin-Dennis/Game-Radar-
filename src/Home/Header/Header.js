@@ -70,6 +70,8 @@ const navigate = useNavigate();
           </div>
 
 
+
+
         </div>
 
 
@@ -102,7 +104,12 @@ const navigate = useNavigate();
 
 
 <div className='LoginBox'>
-
+{/* ✅ API Key Button */}
+<div className='ApiKeyButton' onClick={() => {
+  window.open('https://togin-dennis.github.io/GRAPI', '_blank');
+}}>
+  Get API
+</div>
 <HiOutlineMail size={30} className='icons'/>
 <div className='LoginTextBox'>
   <h5 className='HelpTextHEading'>Need Help ?</h5>
